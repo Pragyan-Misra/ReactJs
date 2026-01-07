@@ -1,14 +1,12 @@
-import One from "./one"
+import One from "./one";
 
 function App() {
-  
-
   return (
     <>
     <One/>
     <h1>Pragyan Misra</h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
