@@ -1,4 +1,5 @@
 import One from "./one"
+import Two from "./two"
 
 function App() {
   
@@ -7,6 +8,7 @@ function App() {
     <>
     <One/>
     <h1>Pragyan Misra</h1>
+    <Two/>
     </>
   )
 }
