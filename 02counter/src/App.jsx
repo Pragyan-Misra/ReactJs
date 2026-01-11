@@ -4,20 +4,27 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
- let Counter = 5
+
+  let [counter, setCounter] = useState(2) //it is a hook, give any default value. it provides to things in the format of array, at first index we get counter and on second place we get function, function is responsible to update value
+
 
  const addValue = () => {
-  Counter++
+  counter = counter + 1
+  setCounter(counter)
+ }
+
+ const removeValue = () => {
+  setCounter(counter--)
  }
 
   return (
     <>
     <h1>React</h1>
-    <h2>Counter Value: {Counter}</h2>
+    <h2>Counter Value: {counter}</h2>
 
-    <button>Add value</button>
+    <button onClick={addValue}>Add value</button>
     <br />
-    <button>Remove Value</button>
+    <button onClick={removeValue}>Remove Value</button>
     </>
   )
 }
