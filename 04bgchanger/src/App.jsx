@@ -54,6 +54,12 @@ function App() {
             onClick={() => {
               setColor('purple')
             }}>test</button>
+            <button
+            className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
+            style={{backgroundColor: 'olive'}}
+            onClick={() => {
+              setColor('olive')
+            }}>test</button>
           </div>
         </div>
       </div>
