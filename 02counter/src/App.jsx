@@ -9,8 +9,19 @@ function App() {
 
 
  const addValue = () => {
-  counter = counter + 1
-  setCounter(counter)
+  // counter = counter + 1
+  setCounter(counter+1)
+  setCounter(counter+1)
+  setCounter(counter+1)
+  setCounter(counter+1)
+  setCounter(counter+1)
+  setCounter(counter+1)
+  // still only one increment will be there, as useState does updation in batchs
+  // if we have to implement updation like this then use this format
+  setCounter(prevcounter => prevcounter+1)
+  setCounter(prevcounter => prevcounter+1)
+  setCounter(prevcounter => prevcounter+1)
+  setCounter(prevcounter => prevcounter+1)
  }
 
  const removeValue = () => {
