@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      
+      <h1>Content API</h1>
     </>
   )
 }
